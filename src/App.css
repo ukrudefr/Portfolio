@@ -1,0 +1,420 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* START */
+
+.image {
+  position: absolute;
+  height: 200vh;
+}
+
+.typewriter {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 350px 10px;
+  color: #fff;
+  width: 100%;
+}
+
+/* PROJECTS */
+
+.image_2 {
+  position: absolute;
+  height: 150vh;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.row  {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.col {
+ 
+  margin: 40px;
+}
+
+.img  {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.title_project {
+	text-align: center;
+	font-size: 24px;
+	margin: 20px;
+}
+
+.btn  {
+  display: block;
+	text-align: center;
+	font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin-top: 15px;
+  background-color: transparent;
+  border-color: #fff;
+
+}
+
+/* About */
+
+.image_3 {
+  position: absolute;
+  height: 250vh;
+}
+
+.title_about {
+  text-align: center;
+	margin: 60px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.container {
+  margin-bottom: 3rem;
+  font-size: 16px;
+}
+
+.color-grey {
+  color: #4b4b4b;
+  /* color: orange; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.cv-header, .profile, .experience, .company-name {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.cv {
+  margin-top: 50px;
+  border: 1px solid #4b4b4b;
+  box-shadow: 1px 1px 10px #000;
+}
+
+.cv-left {
+  background: #4b4b4b;
+  min-height: 30vh;
+  color: #fff;
+}
+
+.cv-right {
+  background: #fff;
+  min-height: 30vh;
+  color: #131313;
+}
+
+
+.cv-left a {
+  color: #fff;
+}
+
+.cv-left a:hover {
+  text-decoration: none;
+}
+
+.cv-left ul {
+  line-height: 175%;
+  padding-left: 30px;
+}
+
+.cv-left ul.contacts-block {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cv-left .address {
+  font-style: italic;
+}
+
+article {
+   padding: 20px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.company-name i{
+  font-size: .8rem;
+  font-family: Aria, sans-serif;
+  text-transform: none;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.lines {
+  overflow: hidden;
+}
+.lines::before, .lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background: #4b4b4b;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+
+.lines::before {
+  margin-left: -100%;
+}
+
+.lines::after {
+  margin-right: -100%;
+}
+
+@media (max-width: 991.98px){
+  .cv-left h1,.cv-left h2,.cv-left h3,.cv-left h4 {
+      font-size: 1.3rem;
+  }
+  .cv-left ul {
+      line-height: 150%;
+      padding-left: 25px;
+  }
+
+}
+
+@media (max-width: 575.98px){
+  .cv {
+      margin-top: 0;
+  }
+  .photo-block img {
+      display: block;
+      max-width: 50%;
+      margin: 20px auto;
+  }
+}
+
+
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 50px;
+  }
+  
+  
+  .contact-links {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+  }
+  
+  .contact-details {
+	text-shadow: 2px 2px 1px #1f1f1f;
+	transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+	transform: translateY(8px);
+  }
+
+  /* for text */
+  @media all and (max-width: 1700px){
+	.typewriter {
+	  margin: 250px 10px;
+	}
+ }
+ 
+/* ======== Desktop First ========= */
+/* Large Devices, Wide Screens */
+@media (max-width: 2400px) {
+  .image {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .image {
+    height: 280vh;
+  }
+}
+
+@media (max-width: 1900px) {
+	.image_2 {
+		height: 100%;
+	}
+}
+@media (max-width: 1200px) {
+	.image_2 {
+		height: 100%;
+	}
+}
+
+/* Mediun Devices, Desktop */
+@media (max-width: 992px) {
+	.image_3 {
+		height: 100%;
+	}
+}
+/* Small Devices, Tablets */
+@media (max-width: 768px) {
+	.image_3 {
+		height: 360vh;
+}
+}
+/* Extra Small Devices, Phones */
+@media (max-width: 480px) {
+	.image_3 {
+		height: 380vh;
+}
+}
+
+
+/* Custom, iPhone Retina */
+@media (max-width: 1024px) {
+	.image_3 {
+		height: 250vh;
+	}
+}
+
+@media (max-width: 912px) {
+	.image_3 {
+		height: 130vh;
+	}
+}
+
+@media (max-width: 820px) {
+	.image_3 {
+		height: 130vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.image_3 {
+		height: 200vh;
+	}
+}
+
+@media (max-width: 570px) {
+	.image_3 {
+		height: 280vh;
+	}
+}
+
+@media (max-width: 380px) {
+	.image_3 {
+		height: 500vh;
+	}
+}
+
+/* certeficates */
+.gallery {
+	border: 1px solid #ccc;
+	padding: 10px;
+ }
+ 
+ .gallery:hover {
+	border: 1px solid #777;
+ }
+ 
+ .gallery img {
+	width: 100%;
+	height: auto;
+ }
+ 
+ 
+ * {
+	box-sizing: border-box;
+ }
+ 
+ .responsive {
+	padding: 6px 6px;
+	float: left;
+	width: 24.99999%;
+ }
+ 
+ @media only screen and (max-width: 700px) {
+	.responsive {
+	  width: 49.99999%;
+	  margin: 6px 0;
+	}
+ }
+ 
+ @media only screen and (max-width: 500px) {
+	.responsive {
+	  width: 100%;
+	}
+ }
+ 
+ .clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+ }
+
+ .model {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 50;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-image: url('./icons/background-2076336_1920.jpg'); */
+	transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(0);
+	overflow: hidden;
+	z-index: 999;
+}
+
+.model.open {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.model img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+	display: block;
+	line-height: 0;
+	box-sizing: border-box;
+	padding: 20px 0 20px;
+	margin: 0px auto;
+}
+
+.model.open svg {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 5px;
+	color: #000;
+	cursor: pointer;
+
+}
