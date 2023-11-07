@@ -247,6 +247,7 @@ article {
  }
  
 /* ======== Desktop First ========= */
+/* Start */
 /* Large Devices, Wide Screens */
 @media (max-width: 2400px) {
   .image {
@@ -254,12 +255,54 @@ article {
   }
 }
 
+@media (max-width: 1900px) {
+	.image {
+	  height: 200vh;
+	}
+ }
+
+@media (max-width: 884px) {
+	.image {
+		height: 80vh;
+	}
+}
+
+@media (max-width: 834px) {
+	.image {
+		height: 74vh;
+	}
+}
+
+@media (max-width: 800px) {
+	.image {
+		height: 68vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.image {
+		height: 87vh;
+	}
+}
+
+@media (max-width: 428px) {
+	.image {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 390px) {
+	.image {
+		height: 130vh;
+	}
+}
+
 @media (max-width: 320px) {
   .image {
     height: 280vh;
   }
 }
-
+/* Projects */
 @media (max-width: 1900px) {
 	.image_2 {
 		height: 100%;
@@ -271,36 +314,29 @@ article {
 	}
 }
 
-/* Mediun Devices, Desktop */
-@media (max-width: 992px) {
-	.image_3 {
-		height: 100%;
-	}
-}
-/* Small Devices, Tablets */
-@media (max-width: 768px) {
-	.image_3 {
-		height: 360vh;
-}
-}
-/* Extra Small Devices, Phones */
-@media (max-width: 480px) {
-	.image_3 {
-		height: 380vh;
-}
-}
+/* About */
 
-
-/* Custom, iPhone Retina */
 @media (max-width: 1024px) {
 	.image_3 {
 		height: 250vh;
 	}
 }
 
+@media (max-width: 992px) {
+	.image_3 {
+		height: 100%;
+	}
+}
+
 @media (max-width: 912px) {
 	.image_3 {
 		height: 130vh;
+	}
+}
+
+@media (max-width: 884px) {
+	.image_3 {
+		height: 150vh;
 	}
 }
 
@@ -312,8 +348,8 @@ article {
 
 @media (max-width: 768px) {
 	.image_3 {
-		height: 200vh;
-	}
+		height: 160vh;
+}
 }
 
 @media (max-width: 570px) {
@@ -322,13 +358,43 @@ article {
 	}
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
 	.image_3 {
-		height: 500vh;
+		height: 380vh;
+}
+}
+
+@media (max-width: 428px) {
+	.image_3 {
+		height: 560vh;
 	}
 }
 
-/* certeficates */
+@media (max-width: 390px) {
+	.image_3 {
+		height: 580vh;
+	}
+}
+
+@media (max-width: 375px) {
+	.image_3 {
+		height: 750vh;
+	}
+}
+
+@media (max-width: 360px) {
+	.image_3 {
+		height: 560vh;
+	}
+}
+
+@media (max-width: 320px) {
+	.image_3 {
+		height: 800vh;
+	}
+}
+
+/* certificates */
 .gallery {
 	border: 1px solid #ccc;
 	padding: 10px;
@@ -373,48 +439,10 @@ article {
 	clear: both;
  }
 
- .model {
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	top: 50;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* background-image: url('./icons/background-2076336_1920.jpg'); */
-	transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
-	visibility: hidden;
-	opacity: 0;
-	transform: scale(0);
-	overflow: hidden;
-	z-index: 999;
-}
 
-.model.open {
-	visibility: visible;
-	opacity: 1;
-	transform: scale(1);
-}
+ 
 
-.model img {
-	width: auto;
-	max-width: 100%;
-	height: auto;
-	max-height: 100%;
-	display: block;
-	line-height: 0;
-	box-sizing: border-box;
-	padding: 20px 0 20px;
-	margin: 0px auto;
-}
 
-.model.open svg {
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	padding: 5px;
-	color: #000;
-	cursor: pointer;
 
-}
+
+
