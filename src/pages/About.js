@@ -10,6 +10,8 @@ import JS from "../images ce/JS.jpg"
 import Node from "../images ce/Node-JS.jpg"
 import PHP from "../images ce/PHP.jpg"
 import ReactJS from "../images ce/ReactJS.jpg"
+import SGD from "../images ce/sgd.jpg"
+import IHK from "../images ce/ihk.jpg"
 
 
 export default function About () {
@@ -144,6 +146,23 @@ export default function About () {
   </div>
 </div>
 
+<div className="clearfix"></div>
+
+<div className="responsive">
+  <div className="gallery">
+    <a target="_blank" rel="noopener noreferrer" href={IHK}>
+      <img src={IHK} alt="Function"/>
+    </a>
+  </div>
+</div>
+
+<div className="responsive">
+  <div className="gallery">
+    <a target="_blank" rel="noopener noreferrer" href={SGD}>
+      <img src={SGD} alt="Array"/>
+    </a>
+  </div>
+</div>
 <div className="clearfix"></div>
         </div>
     </div>	
