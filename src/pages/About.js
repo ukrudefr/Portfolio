@@ -2,7 +2,7 @@ import React from "react"
 import { Parallax } from "react-parallax"
 import about from "../images/about.jpg"
 import photo from "../images/profilfoto.jpg"
-import Function from "../images ce/Functions.jpg"
+/* import Function from "../images ce/Functions.jpg"
 import HTML from "../images ce/HTML.jpg"
 import Array from "../images ce/JS-Array.jpg"
 import OOP from "../images ce/JS-OOP.jpg"
@@ -11,16 +11,21 @@ import Node from "../images ce/Node-JS.jpg"
 import PHP from "../images ce/PHP.jpg"
 import ReactJS from "../images ce/ReactJS.jpg"
 import SGD from "../images ce/sgd.jpg"
-import IHK from "../images ce/ihk.jpg"
-
+import IHK from "../images ce/ihk.jpg" */
+import { usePDF } from 'react-to-pdf'
 
 export default function About () {
+  const { toPDF, targetRef } = usePDF({filename: 'CV.pdf'});
 	return (
 		<Parallax className="image_3" bgImage={about} strength={700}>
+    <div ref={targetRef}>
               <div className="title_about">
                 <h1>What am I ?</h1>
                 </div>   
                  <div className="container mb-5">
+                 <div>
+        <button onClick={() => toPDF()}>Download PDF</button>
+        </div>
         <div className="row cv">
             <div className="col-lg-3 col-md-4 cv-left">
                 <div className="row">
@@ -33,25 +38,31 @@ export default function About () {
                     <div className="col-lg-12 col-md-12 col-sm-6">
                         <hr className="bg-white d-sm-none d-md-block"/>
                         <section className="mt-3">
-                            <h2>Skills</h2>
+                            <h2>Hard Skills</h2>
                             <ul>
                                 <li>Front-end: HTML, CSS, SASS, JavaScript</li>
-                                <li>Program Frameworks: Bootstrap, React</li>
+                                <li>Frameworks: Bootstrap, React</li>
                                 <li>GitHub</li>
                                 <li>Responsive Design</li>
                                 <li>Gulp</li>
-										  <li>Back-end: PHP, MySQL</li>
+										            <li>Back-end: PHP, MySQL</li>
                                 <li>UX and UI Design</li>
-										  <li>Photoshop</li>
-                                <li>Problem Solving</li>
-                                <li>Attention to Detail</li>
-                                <li>Process Improvement</li>
-                                <li>Strong Communication Skills</li>
-                                <li>Creativity</li>
-                                <li>Economics</li>
-                                <li>Business and Corporate management</li>
-										  <li>Leadership and cooperation</li>
-                                <li>Fluent in German, French, Russian, Ukrainian</li>
+										            <li>Photoshop</li>
+                              </ul>
+                            <h2>Soft Skills</h2>
+                              <ul>
+                                <li>Problemlösung</li>
+                                <li>Belastbarkeit</li>
+                                <li>Entscheidungskompetenz</li>
+                                <li>Zielorientierung</li>
+                                <li>Umgang mit digitaler Technologie</li>
+                                </ul>
+                                <h2>Sprachen</h2>
+                                <ul>
+                                <li>Deutsch(verhandlungssicher)</li>
+                                <li>Französisch(fließend)</li>
+                                <li>Englisch(konversationssicher)</li>
+                                <li>Ukrainisch, Russisch(Muttersprachen)</li>
                             </ul>
                         </section>
                     </div>
@@ -62,26 +73,47 @@ export default function About () {
                     <header>
                         <h1 className="text-center cv-header mt-4 mb-4">Tatiana <span className="color-grey">Schmitt</span>
                         </h1>
-                        <h2 className="job-title text-center lines color-grey mb-4">FRONT-END WEB DEVELOPER</h2>
+                        <h2 className="job-title text-center lines color-grey mb-4">JUNIOR FRONT-END WEB DEVELOPER</h2>
                     </header>
-                    <h3 className="mb-3 profile color-grey">Profile</h3>
-                    <p className="mb-5">As a beginner in front-end development, I have mastered many of the tools needed for website development. I started with simple HTML and then learned CSS, JavaScript, ReactJs and PHP step by step.</p>
-                    <h3 className="mb-3 expirience color-grey">Experience</h3>
-                    <section className="mb-5">
-                        <h4 className="company-name mb-2">HELLA-GUTMANN-SOLUTION GMBH - BREISACH GERMANY, <i>NY 2023 - Present</i></h4>
-                        <h5>Call-Center-Agent</h5>
-                        <p>As an agent in the call center, I create the tickets in German and French. Fast writing, analytical thinking and strong communication in multiple languages are my strengths.</p>
-                    </section>
-                    <h3 className="mb-3 profile color-grey">Education</h3>
+                    <h3 className="mb-3 profile color-grey">Berufliche Zusammenfassung:</h3>
+                    <p className="mb-5">Als leidenschaftliche Frontend-Entwicklerin verbinde ich fundierte Kenntnisse in HTML, 
+                    CSS und JavaScript mit einem kreativen Auge für ansprechendes Design. 
+                    Meine Erfahrung reicht von der Gestaltung responsiver Benutzeroberflächen bis zur Implementierung interaktiver Funktionen. 
+                    Mit einem tiefen Verständnis für UX/UI-Prinzipien strebe ich danach, nutzerfreundliche und ästhetisch ansprechende 
+                    Webanwendungen zu schaffen. Mein Interesse an neuen Technologien und Trends in der Frontend-Entwicklung 
+                    treibt mich dazu an, ständig dazuzulernen und mich weiterzuentwickeln. Ich bin stets auf der Suche nach innovativen Lösungen, 
+                    um die Benutzererfahrung zu verbessern und die Leistung von Webanwendungen zu optimieren.</p>
+                    <p className="mb-5">Durch meine Fähigkeit zur kreativen Problemlösung und meine ausgeprägte Teamfähigkeit bin ich in der Lage, 
+                    effektiv in multidisziplinären Teams zu arbeiten. Meine Bereitschaft, neue Technologien und Frameworks zu erforschen, 
+                    ermöglicht es mir, mich schnell an sich ändernde Anforderungen anzupassen und auf dem neuesten Stand der 
+                    Entwicklungspraktiken zu bleiben.</p>
+                    <p className="mb-5">Ich stehe am Anfang meiner beruflichen Laufbahn als Front-End Entwicklerin . Meine Zielsetzung ist es, 
+                    qualitativ hochwertige und benutzerzentrierte Softwarelösungen zu entwickeln, die nicht nur den Anforderungen entsprechen, 
+                    sondern auch die Erwartungen der Benutzer übertreffen.</p>
+                    <h3 className="mb-3 profile color-grey">Ausbildung:</h3>
                     <ul>
-							<li>2017-2019, Distance learning programme approved by the National Agency for Distance Education SGD Darmstadt Germany for IHK examination Bachelor Professional (CCI) of Business
+							<li>01.12.2017 - 30.12.2019, Fernlehrgang "Geprüfte Wirtschaftsfachwirtin" bei SGD Darmstadt
 							</li>
-							<li>Courses Front-end: HTML for JS dev, JavaScript, Array, OOP JavaScript, React.js, Function JS</li>
-							<li>Courses Back-end: PHP, Node.js</li>
+              <li>23.10.2020 IHK Prüfung "Geprüfte Wirtschaftsfachwirtin"</li>
+							<li>2021 Responsive Web Design bei freeCodeCamp.org</li>
+							<li>2022 - 2023 Online Weiterbildung als Frontend-Entwicklerin bei ItGid Education Platform</li>
 					  </ul>
+            <h3 className="mb-3 expirience color-grey">Projekten:</h3>
+                    <section className="mb-5">
+                     <ul>
+                      <li>https://ukrudefr-portfolio.netlify.app/</li>
+                      <li>https://charmeetbeaute68.fr</li>
+                      <li>https://tatianas-garden.netlify.app</li>
+                     </ul>
+                    </section>
+            <h3 className="mb-3 expirience color-grey">Berufliche Situation:</h3>
+                    <section className="mb-5">
+                        <h4 className="company-name mb-2">HELLA-GUTMANN-SOLUTION GMBH - BREISACH DEUTSCHLAND</h4>
+                        <h5>Call-Center-Agent</h5>
+                    </section>
                 </article>
             
-<div className="responsive">
+{/* <div className="responsive">
   <div className="gallery">
     <a target="_blank" rel="noopener noreferrer" href={HTML}>
       <img src={HTML} alt="HTML"/>
@@ -163,10 +195,11 @@ export default function About () {
     </a>
   </div>
 </div>
-<div className="clearfix"></div>
+<div className="clearfix"></div> */}
         </div>
     </div>	
 </div>  
+</div>
 		</Parallax>
 	)
 }
