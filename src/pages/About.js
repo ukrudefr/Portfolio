@@ -1,30 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
 import { Parallax } from "react-parallax"
 import about from "../images/about.jpg"
 import photo from "../images/profilfoto.jpg"
-/* import Function from "../images ce/Functions.jpg"
-import HTML from "../images ce/HTML.jpg"
-import Array from "../images ce/JS-Array.jpg"
-import OOP from "../images ce/JS-OOP.jpg"
-import JS from "../images ce/JS.jpg"
-import Node from "../images ce/Node-JS.jpg"
-import PHP from "../images ce/PHP.jpg"
-import ReactJS from "../images ce/ReactJS.jpg"
-import SGD from "../images ce/sgd.jpg"
-import IHK from "../images ce/ihk.jpg" */
+import certificate from '../images ce/certificate.png'
 import { usePDF } from 'react-to-pdf'
+import Certificates from "../components/Certificates"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from "@fortawesome/free-solid-svg-icons"
+
 
 export default function About () {
   const { toPDF, targetRef } = usePDF({filename: 'CV.pdf'});
+	const [show, setShow] = useState(false);
+
 	return (
 		<Parallax className="image_3" bgImage={about} strength={700}>
     <div ref={targetRef}>
               <div className="title_about">
-                <h1>What am I ?</h1>
+                <h1>Über mich</h1>
                 </div>   
                  <div className="container mb-5">
                  <div>
-        <button onClick={() => toPDF()}>Download PDF</button>
+        <button className="pdf" onClick={() => toPDF()}>Als PDF Herunterladen</button>
         </div>
         <div className="row cv">
             <div className="col-lg-3 col-md-4 cv-left">
@@ -32,7 +29,9 @@ export default function About () {
                     <div className="photo-block col-lg-12 col-md-12 col-sm-6 col-xs-12">
                         <img src={photo} alt="myphoto" className="img-thumbnail rounded-circle mt-3 mb-3"/>
                         <ul className="contacts-block text-center">
+												<li>+33(0)6 51 39 82 22</li>
                             <li><a href="mailto:example@email.el">ukrudefr@gmail.com</a></li>
+														<li>Algolsheim, Frankreich</li>
                         </ul>     
                     </div>
                     <div className="col-lg-12 col-md-12 col-sm-6">
@@ -59,10 +58,10 @@ export default function About () {
                                 </ul>
                                 <h2>Sprachen</h2>
                                 <ul>
-                                <li>Deutsch(verhandlungssicher)</li>
-                                <li>Französisch(fließend)</li>
-                                <li>Englisch(konversationssicher)</li>
-                                <li>Ukrainisch, Russisch(Muttersprachen)</li>
+                                <li>Deutsch (verhandlungssicher)</li>
+                                <li>Französisch (fließend)</li>
+                                <li>Englisch (konversationssicher)</li>
+                                <li>Ukrainisch, Russisch (Muttersprachen)</li>
                             </ul>
                         </section>
                     </div>
@@ -110,92 +109,18 @@ export default function About () {
                     <section className="mb-5">
                         <h4 className="company-name mb-2">HELLA-GUTMANN-SOLUTION GMBH - BREISACH DEUTSCHLAND</h4>
                         <h5>Call-Center-Agent</h5>
-                    </section>
+												
+												<button className="certificate" onClick={() => setShow(!show)}><h5>Zertifikate</h5>
+													{show === false ? <img src={certificate} 
+												width={'40px'}
+												height={'40px'}
+												alt="certificate"
+												/> : <FontAwesomeIcon icon={faXmark} size="1x"/>}
+												
+												</button>
+												{show && <Certificates/>}
+									</section>
                 </article>
-            
-{/* <div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={HTML}>
-      <img src={HTML} alt="HTML"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={JS}>
-      <img src={JS} alt="JS"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={Function}>
-      <img src={Function} alt="Function"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={Array}>
-      <img src={Array} alt="Array"/>
-    </a>
-  </div>
-</div>
-<div className="clearfix"></div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={OOP}>
-      <img src={OOP} alt="OOP"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={ReactJS}>
-      <img src={ReactJS} alt="ReactJS"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={PHP}>
-      <img src={PHP} alt="PHP"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={Node}>
-      <img src={Node} alt="Node"/>
-    </a>
-  </div>
-</div>
-
-<div className="clearfix"></div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={IHK}>
-      <img src={IHK} alt="Function"/>
-    </a>
-  </div>
-</div>
-
-<div className="responsive">
-  <div className="gallery">
-    <a target="_blank" rel="noopener noreferrer" href={SGD}>
-      <img src={SGD} alt="Array"/>
-    </a>
-  </div>
-</div>
-<div className="clearfix"></div> */}
         </div>
     </div>	
 </div>  

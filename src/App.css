@@ -73,6 +73,15 @@ h2 {
 }
 
 /* About */
+.pdf {
+	display: block;
+	margin: auto;
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	font-weight: bold;
+	color: #282424;
+}
 
 .image_3 {
   position: absolute;
@@ -259,11 +268,17 @@ article {
 	.image {
 	  height: 200vh;
 	}
+	.image_3 {
+		height: 380vh;
+	}
  }
 
 @media (max-width: 884px) {
 	.image {
 		height: 80vh;
+	}
+	.image_3 {
+		height: 100vh;
 	}
 }
 
@@ -395,6 +410,11 @@ article {
 }
 
 /* certificates */
+.certificate {
+	padding: 20px;
+	border: none;
+	background-color:#fff;
+}
 .gallery {
 	border: 1px solid #ccc;
 	padding: 10px;
