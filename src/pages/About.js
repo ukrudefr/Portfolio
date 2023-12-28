@@ -109,14 +109,12 @@ export default function About () {
                     <section className="mb-5">
                         <h4 className="company-name mb-2">HELLA-GUTMANN-SOLUTION GMBH - BREISACH DEUTSCHLAND</h4>
                         <h5>Call-Center-Agent</h5>
-												
 												<button className="certificate" onClick={() => setShow(!show)}><h5>Zertifikate</h5>
 													{show === false ? <img src={certificate} 
 												width={'40px'}
 												height={'40px'}
 												alt="certificate"
 												/> : <FontAwesomeIcon icon={faXmark} size="1x"/>}
-												
 												</button>
 												{show && <Certificates/>}
 									</section>
