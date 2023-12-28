@@ -66,7 +66,7 @@ const Projects = () => {
 	return (
 		<Parallax className="image_2" bgImage={project} strength={100}>
 			<div className="title_project">
-					<h2>Here are some of my Projects</h2>
+					<h2>Hier sind einige meiner Projekte</h2>
 				</div>
 			{projectDate && projectDate.length && (
 			<Container>
