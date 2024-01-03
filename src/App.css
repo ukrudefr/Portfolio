@@ -108,7 +108,7 @@ h1 {
 }
 
 .img-thumbnail {
-	padding: 0;
+	padding: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -265,6 +265,12 @@ article {
 @media (max-width: 2400px) {
   .image {
     height: 100vh;
+	}
+}
+
+@media (max-width: 2400px) and (min-width: 1900px) {
+	.photo-block img {
+		margin-left: 20px;
 	}
 }
 
