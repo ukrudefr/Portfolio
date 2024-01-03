@@ -4,9 +4,9 @@ import about from "../images/about.jpg"
 import photo from "../images/profilfoto.jpg"
 import certificate from '../images ce/certificate.png'
 import { usePDF } from 'react-to-pdf'
-import Certificates from "../components/Certificates"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from "@fortawesome/free-solid-svg-icons"
+import Certificates from "../components/Certificates"
 
 
 export default function About () {

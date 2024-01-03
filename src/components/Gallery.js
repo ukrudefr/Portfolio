@@ -9,10 +9,11 @@ import JS from "../images ce/JS.jpg"
 import Node from "../images ce/Node-JS.jpg"
 import PHP from "../images ce/PHP.jpg"
 import ReactJS from "../images ce/ReactJS.jpg"
+import { Row, Card, Col, Container } from "react-bootstrap"
 
 
 const Gallery = () => {
-	let data = [
+	let images = [
 		{
 			id: 1,
 			imgSrc: HTML,
@@ -56,21 +57,25 @@ const [model, setModel] = useState(false);
 
 	return (
 		<>
-		<div className={model ? "model open" : "model"}>
+	<Container fluid className="wrapper">
+			<div className={model ? "model open" : "model"}>
 			<img src={tempImgSrc} alt="" />
 			<FontAwesomeIcon icon={faXmark} size="2x"  onClick={() => setModel(false)}/> 
 		</div>
-		<div className="responsive">
-			<div className="gallery">
-				{data.map((item, index)=> {
+			<Row className="row-cols-xl-3 justify-content-md-center">
+				{images.map((item, index)=> {
 					return (
-						<div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-							<img src={item.imgSrc} style={{width:'100%'}} alt=""/>
-						</div>
+						<Col className="col">
+						<Card className="card" xs={12} sm={4} md={4} 
+						style={{width: '25rem', border: '2px solid #a69587'}} 
+						key={index} onClick={() => getImg(item.imgSrc)}>
+							<img src={item.imgSrc} alt=""/>
+							</Card>
+							</Col>
 					)
 				})}
-			</div>
-			</div>
+			</Row>
+			</Container>
 		</>
 	)
 }

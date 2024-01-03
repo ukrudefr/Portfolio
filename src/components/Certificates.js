@@ -13,6 +13,7 @@ import IHK from "../images ce/ihk.jpg"
 
 export default function Certificates () {
 
+
 	return(
 		<Container>
 		<div className="responsive">
