@@ -81,12 +81,9 @@ export default function About () {
                     Mit einem tiefen Verständnis für UX/UI-Prinzipien strebe ich danach, nutzerfreundliche und ästhetisch ansprechende 
                     Webanwendungen zu schaffen. Mein Interesse an neuen Technologien und Trends in der Frontend-Entwicklung 
                     treibt mich dazu an, ständig dazuzulernen und mich weiterzuentwickeln. Ich bin stets auf der Suche nach innovativen Lösungen, 
-                    um die Benutzererfahrung zu verbessern und die Leistung von Webanwendungen zu optimieren.</p>
-                    <p className="mb-5">Durch meine Fähigkeit zur kreativen Problemlösung und meine ausgeprägte Teamfähigkeit bin ich in der Lage, 
-                    effektiv in multidisziplinären Teams zu arbeiten. Meine Bereitschaft, neue Technologien und Frameworks zu erforschen, 
-                    ermöglicht es mir, mich schnell an sich ändernde Anforderungen anzupassen und auf dem neuesten Stand der 
-                    Entwicklungspraktiken zu bleiben.</p>
-                    <p className="mb-5">Ich stehe am Anfang meiner beruflichen Laufbahn als Front-End Entwicklerin . Meine Zielsetzung ist es, 
+                    um die Benutzererfahrung zu verbessern und die Leistung von Webanwendungen zu optimieren.<br/>
+										<br/>
+                    Ich stehe am Anfang meiner beruflichen Laufbahn als Front-End Entwicklerin . Meine Zielsetzung ist es, 
                     qualitativ hochwertige und benutzerzentrierte Softwarelösungen zu entwickeln, die nicht nur den Anforderungen entsprechen, 
                     sondern auch die Erwartungen der Benutzer übertreffen.</p>
                     <h3 className="mb-3 profile color-grey">Ausbildung:</h3>
@@ -96,13 +93,14 @@ export default function About () {
               <li>23.10.2020 IHK Prüfung "Geprüfte Wirtschaftsfachwirtin"</li>
 							<li>2021 Responsive Web Design bei freeCodeCamp.org</li>
 							<li>2022 - 2023 Online Weiterbildung als Frontend-Entwicklerin bei ItGid Education Platform</li>
+							<li>2023 - 2024 Online-Kurse "TypeScript"</li>
 					  </ul>
             <h3 className="mb-3 expirience color-grey">Projekten:</h3>
                     <section className="mb-5">
                      <ul>
-                      <li>https://ukrudefr-portfolio.netlify.app/</li>
-                      <li>https://charmeetbeaute68.fr</li>
-                      <li>https://tatianas-garden.netlify.app</li>
+                      <li><a href="https://ukrudefr-portfolio.netlify.app">ukrudefr-portfolio.netlify.app</a></li>
+                      <li><a href="https://charmeetbeaute68.fr">charmeetbeaute68.fr</a></li>
+                      <li><a href="https://tatianas-garden.netlify.app">tatianas-garden.netlify.app</a></li>
                      </ul>
                     </section>
             <h3 className="mb-3 expirience color-grey">Berufliche Situation:</h3>
