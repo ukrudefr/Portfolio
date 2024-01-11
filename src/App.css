@@ -288,7 +288,7 @@ article {
 		height: 110vh;
 	}
 	.image_3 {
-		height: 380vh;
+		height: 250vh;
 	}
  }
 
@@ -420,7 +420,7 @@ article {
 
 @media (max-width: 360px) {
 	.image_3 {
-		height: 760vh;
+		height: 720vh;
 	}
 }
 
@@ -432,7 +432,7 @@ article {
 	  margin: 160px 10px;
 	}
 	.image_3 {
-		height: 1100vh;
+		height: 1050vh;
 	}
 }
 
