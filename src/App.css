@@ -288,11 +288,9 @@ article {
 		height: 110vh;
 	}
 	.image_3 {
-		height: 250vh;
+		height: 350vh;
 	}
  }
-
-
 
 @media (max-width: 884px) {
 	.image {
