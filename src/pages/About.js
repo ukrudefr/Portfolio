@@ -98,7 +98,7 @@ export default function About () {
             <h3 className="mb-3 expirience color-grey">Projekten:</h3>
                     <section className="mb-5">
                      <ul>
-                      <li><a href="https://ukrudefr-portfolio.netlify.app">https://ukrudefr-portfolio.netlify.app</a></li>
+                      <li><a href="https://ukrudefr-portfolio.netlify.app">https://.ukrudefr-portfolio.netlify.app</a></li>
                       <li><a href="https://charmeetbeaute68.fr">https://charmeetbeaute68.fr</a></li>
                       <li><a href="https://tatianas-garden.netlify.app">https://tatianas-garden.netlify.app</a></li>
                      </ul>
